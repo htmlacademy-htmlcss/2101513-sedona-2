@@ -2,6 +2,7 @@
 
 * Студент: [Артур Ибрагимов](https://up.htmlacademy.ru/htmlcss-individual/2/user/2101513).
 * Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
+* Онлайн версия проекта: [Седона](https://ilyachever.github.io/2101513-sedona-2/).
 
 ---
 

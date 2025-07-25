@@ -211,7 +211,157 @@
       </form>
     </section>
 
+    <section class="main-inner__hotels hotels">
+      <h2 class="visually-hidden">Найденные отели по выбранным фильтрам</h2>
 
+      <header class="hotels__header">
+        <b class="hotels__title">Найдено гостиниц: <span class="hotels__amount">38</span></b>
+
+        <select class="hotels__sorting sorting" name="sorting" aria-label="Сортировка найденных отелей">
+          <option value="cheap" selected>Сначала дешёвые</option>
+          <option value="popular">Сначала популярные</option>
+          <option value="expensive">Сначала дорогие</option>
+        </select>
+
+        <ul class="hotels__view">
+          <li class="hotels__view-item">
+            <a class="hotels__view-link" href="./catalog.html?view=tile">
+              <span class="visually-hidden">Показать плиткой</span>
+            </a>
+          </li>
+
+          <li class="hotels__view-item">
+            <a class="hotels__view-link" href="./catalog.html?view=card">
+              <span class="visually-hidden">Показать карточками</span>
+            </a>
+          </li>
+
+          <li class="hotels__view-item">
+            <a class="hotels__view-link" href="./catalog.html?view=list">
+              <span class="visually-hidden">Показать списком</span>
+            </a>
+          </li>
+        </ul>
+      </header>
+
+      <ul class="hotels__list">
+        <li class="hotels__item">
+          <article class="hotels__card card">
+            <img class="card__image" src="#" alt="Звёздное небо, окруженное горами.">
+
+            <h3 class="card__title">Amara Resort & Spa</h3>
+
+            <dl class="card__info">
+              <dt class="visually-hidden">Тип жилья</dt>
+              <dd>Гостиница</dd>
+
+              <dt class="visually-hidden">Цена</dt>
+              <dd>От 4000 ₽</dd>
+            </dl>
+
+            <div class="card__controls">
+              <button class="card__controls-button button">Подробнее</button>
+              <button class="card__controls-button button">В избранное</button>
+            </div>
+
+            <div class="card__quality">
+              <span class="card__stars">
+                <span class="visually-hidden">Четырёхзвёздочный отель</span>
+              </span>
+
+              <p class="card__rating">Рейтинг: <span class="card__rating-amount">8,5</span></p>
+            </div>
+          </article>
+        </li>
+
+        <li class="hotels__item">
+          <article class="hotels__card card">
+            <img class="card__image" src="#" alt="Величественные горы в закате.">
+
+            <h3 class="card__title">Villas at Poco Diablo</h3>
+
+            <dl class="card__info">
+              <dt class="visually-hidden">Тип жилья</dt>
+              <dd>Гостиница</dd>
+
+              <dt class="visually-hidden">Цена</dt>
+              <dd>От 5000 ₽</dd>
+            </dl>
+
+            <div class="card__controls">
+              <button class="card__controls-button button">Подробнее</button>
+              <button class="card__controls-button button">В избранном</button>
+            </div>
+
+            <div class="card__quality">
+              <span class="card__stars">
+                <span class="visually-hidden">Четырёхзвёздочный отель</span>
+              </span>
+
+              <p class="card__rating">Рейтинг: <span class="card__rating-amount">9,2</span></p>
+            </div>
+          </article>
+        </li>
+
+        <li class="hotels__item">
+          <article class="hotels__card card">
+            <img class="card__image" src="#" alt="Каньон в лесу на рассвете.">
+
+            <h3 class="card__title">Desert Quail Inn</h3>
+
+            <dl class="card__info">
+              <dt class="visually-hidden">Тип жилья</dt>
+              <dd>Гостиница</dd>
+
+              <dt class="visually-hidden">Цена</dt>
+              <dd>От 2500 ₽</dd>
+            </dl>
+
+            <div class="card__controls">
+              <button class="card__controls-button button">Подробнее</button>
+              <button class="card__controls-button button">В избранное</button>
+            </div>
+
+            <div class="card__quality">
+              <span class="card__stars">
+                <span class="visually-hidden">Трёхзвёздочный отель</span>
+              </span>
+
+              <p class="card__rating">Рейтинг: <span class="card__rating-amount">6,9</span></p>
+            </div>
+          </article>
+        </li>
+
+        <li class="hotels__item">
+          <article class="hotels__card card">
+            <img class="card__image" src="#" alt="Каньон под звёздным небом на закате.">
+
+            <h3 class="card__title">GreenTree Inn</h3>
+
+            <dl class="card__info">
+              <dt class="visually-hidden">Тип жилья</dt>
+              <dd>Гостиница</dd>
+
+              <dt class="visually-hidden">Цена</dt>
+              <dd>От 1500 ₽</dd>
+            </dl>
+
+            <div class="card__controls">
+              <button class="card__controls-button button">Подробнее</button>
+              <button class="card__controls-button button">В избранное</button>
+            </div>
+
+            <div class="card__quality">
+              <span class="card__stars">
+                <span class="visually-hidden">Двухзвёздочный отель</span>
+              </span>
+
+              <p class="card__rating">Рейтинг: <span class="card__rating-amount">5,0</span></p>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </section>
   </main>
 
   <footer class="footer">

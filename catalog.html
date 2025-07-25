@@ -59,6 +59,138 @@
       </li>
     </ul>
 
+    <section class="main__inner-filters filters">
+      <h2 class="visually-hidden">Настроить параметры подбора отелей</h2>
+
+      <form class="filters" action="https://echo.htmlacademy.ru/" method="POST">
+        <fieldset class="filters__fieldset">
+          <legend class="filters__legend">Инфраструктура</legend>
+
+          <ul class="filters__list">
+            <li class="filters__item">
+              <label class="filters__wrapper">
+                Бассейн
+                <input class="filters__input"
+                       type="checkbox"
+                       name="infrastructure"
+                       value="pool"
+                       checked
+                >
+              </label>
+            </li>
+
+            <li class="filters__item">
+              <label class="filters__wrapper">
+                Парковка
+                <input class="filters__input"
+                       type="checkbox"
+                       name="infrastructure"
+                       value="parking"
+                       checked
+                >
+              </label>
+            </li>
+
+            <li class="filters__item">
+              <label class="filters__wrapper">
+                Wi-Fi
+                <input class="filters__input"
+                       type="checkbox"
+                       name="infrastructure"
+                       value="wi-fi"
+                >
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="filters__fieldset">
+          <legend class="filters__legend">Тип Жилья</legend>
+
+          <ul class="filters__list">
+            <li class="filters__item">
+              <label class="filters__wrapper">
+                Гостиница
+                <input class="filters__input"
+                       type="radio"
+                       name="room-type"
+                       value="hotel"
+                       checked
+                >
+              </label>
+            </li>
+
+            <li class="filters__item">
+              <label class="filters__wrapper">
+                Мотель
+                <input class="filters__input"
+                       type="radio"
+                       name="room-type"
+                       value="motel"
+                >
+              </label>
+            </li>
+
+            <li class="filters__item">
+              <label class="filters__wrapper">
+                Апартаменты
+                <input class="filters__input"
+                       type="radio"
+                       name="room-type"
+                       value="apartments"
+                >
+
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="filters__fieldset">
+          <legend class="filters__legend">Стоимость</legend>
+
+          <div class="filters__range range">
+            <div class="range__inputs">
+              <p class="range__wrapper">
+                <label class="range__label" for="min-price">От</label>
+                <input class="range__input"
+                       id="min-price"
+                       type="number"
+                       name="min-price"
+                       min="0"
+                       max="8999"
+                >
+              </p>
+              <p class="range__wrapper">
+                <label class="range__label" for="min-price"></label>
+                <input class="range__input"
+                       id="max-price"
+                       type="number"
+                       name="max-price"
+                       min="1"
+                       max="9000"
+                >
+              </p>
+            </div>
+
+            <div class="range__slider">
+              <button class="range__slider-button button">
+                <span class="visually-hidden">Минимальная цена отеля</span>
+              </button>
+              <span class="range__slider-progress"></span>
+              <button class="range__slider-button button">
+                <span class="visually-hidden">Максимальная цена отеля</span>
+              </button>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="filters__controls">
+          <button class="filters__controls__button button" type="submit">Применить</button>
+          <button class="filters__controls__button button" type="reset">Сбросить</button>
+        </div>
+      </form>
+    </section>
+
     <section class="main__subscribe subscribe subscribe--without-image">
       <header class="subscribe__intro intro">
         <h2 class="intro__heading">

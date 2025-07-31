@@ -10,7 +10,7 @@
     <div class="header__wrapper container">
       <a class="header__logo" href="index.html" aria-current="page">
         <span class="visually-hidden">Обновить главную страницу</span>
-        <img class="logo"
+        <img class="logo image"
              src="images/logos/site-logo.svg"
              width="140"
              height="70"
@@ -21,27 +21,27 @@
       <nav class="header__navigation navigation">
         <ul class="navigation__list list">
           <li class="navigation__item">
-            <a class="navigation__link" aria-current="page" title="Текущая страница">Главная</a>
+            <a class="navigation__link link" aria-current="page" title="Текущая страница">Главная</a>
           </li>
 
           <li class="navigation__item">
-            <a class="navigation__link" href="#">О Седоне</a>
+            <a class="navigation__link link" href="#">О Седоне</a>
           </li>
 
           <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">Гостиницы</a>
+            <a class="navigation__link link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
 
         <ul class="navigation__list list">
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--as-icon" href="#">
+            <a class="navigation__link navigation__link--as-icon navigation__link--icon-search link" href="#">
               <span class="visually-hidden">Перейти на страницу поиска</span>
             </a>
           </li>
 
           <li class="navigation__item">
-            <a class="navigation__link navigation__link--as-icon" href="#">
+            <a class="navigation__link navigation__link--as-icon navigation__link--icon-favorite link" href="#">
               <span class="visually-hidden">Перейти на страницу избранного</span>
 
               <span class="navigation__link-counter" aria-live="polite">
@@ -52,7 +52,7 @@
         </ul>
       </nav>
 
-      <a class="header__link" href="#">Хочу сюда!</a>
+      <a class="header__link link button button--accent" href="#">Хочу сюда!</a>
     </div>
   </header>
 
@@ -60,7 +60,7 @@
     <section class="main__hero hero">
       <h1 class="visually-hidden">Седона - небольшой городок в Аризоне</h1>
 
-      <img src="images/content/welcome.svg"
+      <img class="hero__image image" src="images/content/welcome.svg"
            width="458"
            height="352"
            alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!"
@@ -72,18 +72,18 @@
 
       <header class="advantages__intro intro">
         <p class="intro__heading">
-          Седона — небольшой городок в Аризоне, заслуживающий большего!
+          Седона — небольшой городок в Аризоне,<br>заслуживающий большего!
         </p>
         <p class="intro__text">
           Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
         </p>
       </header>
 
-      <ul class="advantages__list">
-        <li class="advantages__item advantages__item--has-image">
+      <ul class="advantages__list list">
+        <li class="advantages__item advantages__item--has-image card">
           <figure>
             <figcaption class="advantages__item-wrapper">
-              <h3 class="advantages__item-title">
+              <h3 class="advantages__item-title card__title">
                 Настоящий городок
               </h3>
               <p class="advantages__item-description">
@@ -100,43 +100,43 @@
           </figure>
         </li>
 
-        <li class="advantages__item">
+        <li class="advantages__item card">
           <div class="advantages__item-wrapper">
-            <h3 class="advantages__item-title">
+            <h3 class="advantages__item-title card__title">
               Небольшая площадь
             </h3>
-            <p class="advantages__item-description">
+            <p class="advantages__item-description card__description">
               Все достопримечательности находятся очень близко
             </p>
           </div>
         </li>
 
-        <li class="advantages__item">
+        <li class="advantages__item card">
           <div class="advantages__item-wrapper">
-            <h3 class="advantages__item-title">
+            <h3 class="advantages__item-title card__title">
               Красивая дорога
             </h3>
-            <p class="advantages__item-description">
+            <p class="advantages__item-description card__description">
               Ехать в Седону из Лас-Вегаса совсем не скучно!
             </p>
           </div>
         </li>
 
-        <li class="advantages__item">
+        <li class="advantages__item card">
           <div class="advantages__item-wrapper">
-            <h3 class="advantages__item-title">
+            <h3 class="advantages__item-title card__title">
               Мало туристов
             </h3>
-            <p class="advantages__item-description">
+            <p class="advantages__item-description card__description">
               Большинство едет в Гранд Каньон и толпится там
             </p>
           </div>
         </li>
 
-        <li class="advantages__item advantages__item--has-image">
+        <li class="advantages__item advantages__item--has-image card">
           <figure>
             <figcaption class="advantages__item-wrapper">
-              <h3 class="advantages__item-title">
+              <h3 class="advantages__item-title card__title">
                 Там есть мост дьявола
               </h3>
               <p class="advantages__item-description">
@@ -160,37 +160,37 @@
 
       <header class="infrastructure__intro intro">
         <p class="intro__heading">
-          Седона — небольшой городок в Аризоне, заслуживающий большего!
+          Приезжайте в Седону отдохнуть<br> в комфорте и уюте!
         </p>
         <p class="intro__text">
-          Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
+          Опытный персонал и качественное обслуживание!
         </p>
       </header>
 
-      <ul class="infrastructure__list">
-        <li class="infrastructure__item">
-          <h3 class="infrastructure__item-title">
+      <ul class="infrastructure__list list">
+        <li class="infrastructure__item infrastructure__item--house card">
+          <h3 class="infrastructure__item-title card__title">
             Жильё
           </h3>
-          <p class="infrastructure__item-description">
+          <p class="infrastructure__item-description card__description">
             Рекомендуем пожить&nbsp;в настоящем мотеле, всё как в кино!
           </p>
         </li>
 
-        <li class="infrastructure__item">
-          <h3 class="infrastructure__item-title">
+        <li class="infrastructure__item infrastructure__item--food card">
+          <h3 class="infrastructure__item-title card__title">
             Еда
           </h3>
-          <p class="infrastructure__item-description">
+          <p class="infrastructure__item-description card__description">
             Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
           </p>
         </li>
 
-        <li class="infrastructure__item">
-          <h3 class="infrastructure__item-title">
+        <li class="infrastructure__item infrastructure__item--souvenir card">
+          <h3 class="infrastructure__item-title card__title">
             Сувениры
           </h3>
-          <p class="infrastructure__item-description">
+          <p class="infrastructure__item-description card__description">
             Не только китайского, но и настоящего местного производства!
           </p>
         </li>
@@ -209,7 +209,7 @@
         </p>
       </header>
 
-      <button class="offer__button button" type="button">Поиск гостиницы в Седоне</button>
+      <button class="offer__button button button--accent" type="button">Поиск гостиницы в Седоне</button>
     </section>
 
     <section class="main__subscribe subscribe">

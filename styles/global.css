@@ -17,27 +17,15 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto;
   margin: 0;
+
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.17;
+  color: var(--text-color-primary);
 }
 
 img {
-  display: block;
-  height: auto;
   max-width: 100%;
-}
-
-.visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-
-  border: 0;
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-
-  overflow: hidden;
+  height: auto;
+  object-fit: contain;
 }

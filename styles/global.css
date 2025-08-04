@@ -19,13 +19,16 @@ body {
   margin: 0;
 
   font-family: 'PT Sans', sans-serif;
-  font-size: 18px;
-  line-height: 1.17;
-  color: var(--text-color-primary);
+  font-size: var(--primary-text-size);
+  line-height: var(--primary-text-line-height);
+  color: var(--text-primary);
+
+  background-color: var(--bg-neutral);
 }
 
 img {
   max-width: 100%;
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
+  vertical-align: bottom;
 }

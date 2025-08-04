@@ -21,27 +21,27 @@
 
         <nav class="header__navigation navigation text text--mid">
           <ul class="navigation__list list">
-            <li class="navigation__item">
+            <li>
               <a class="navigation__link link link--primary" href="index.html">Главная</a>
             </li>
 
-            <li class="navigation__item">
+            <li>
               <a class="navigation__link link link--primary" href="#">О Седоне</a>
             </li>
 
-            <li class="navigation__item">
+            <li>
               <a class="navigation__link navigation__link--active link" aria-current="page" title="Текущая страница">Гостиницы</a>
             </li>
           </ul>
 
           <ul class="navigation__list list">
-            <li class="navigation__item">
+            <li>
               <a class="navigation__link navigation__link--as-icon navigation__link--icon-search link" href="#">
                 <span class="visually-hidden">Перейти на страницу поиска</span>
               </a>
             </li>
 
-            <li class="navigation__item">
+            <li>
               <a class="navigation__link navigation__link--as-icon navigation__link--icon-favorite link" href="#">
                 <span class="visually-hidden">Перейти на страницу избранного</span>
 
@@ -59,169 +59,167 @@
 
     <main class="main-inner">
       <div class="main-inner__header">
-        <div class="container">
-          <h1 class="main-inner__title heading heading--first">Гостиницы Седоны</h1>
+        <h1 class="main-inner__title heading heading--first">Гостиницы Седоны</h1>
 
-          <nav class="main-inner__breadcrumbs breadcrumbs text text--small">
-            <ol class="breadcrumbs__list list">
-              <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link link" href="index.html">
-                  <span class="visually-hidden">Перейти на главную страницу</span>
-                </a>
-              </li>
+        <nav class="main-inner__breadcrumbs breadcrumbs text text--small">
+          <ol class="breadcrumbs__list list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link link" href="index.html">
+                <span class="visually-hidden">Перейти на главную страницу</span>
+              </a>
+            </li>
 
-              <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link link" aria-current="page">
-                  Гостиницы
-                </a>
-              </li>
-            </ol>
-          </nav>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link link" aria-current="page">
+                Гостиницы
+              </a>
+            </li>
+          </ol>
+        </nav>
 
-          <section class="main-inner__filters filters">
-            <h2 class="visually-hidden">Настройте параметры подбора отелей</h2>
+        <section class="filters">
+          <h2 class="visually-hidden">Настройте параметры подбора отелей</h2>
 
-            <form class="filters__form" action="https://echo.htmlacademy.ru/" method="GET">
-              <div class="filters__side">
-                <fieldset class="filters__fieldset">
-                  <legend class="filters__legend text text--mid">Инфраструктура:</legend>
+          <form class="filters__form" action="https://echo.htmlacademy.ru/" method="GET">
+            <div class="filters__side">
+              <fieldset class="filters__fieldset">
+                <legend class="filters__legend text text--mid">Инфраструктура:</legend>
 
-                  <ul class="filters__list list">
-                    <li class="filters__item">
-                      <label class="filters__wrapper">
-                        <input class="filters__input visually-hidden"
-                               type="checkbox"
-                               name="infrastructure"
-                               value="pool"
-                               checked
-                        >
-                        <span class="filters__checkbox"></span>
-                        Бассейн
-                      </label>
-                    </li>
+                <ul class="list">
+                  <li class="filters__item">
+                    <label class="filters__wrapper">
+                      <input class="filters__input visually-hidden"
+                             type="checkbox"
+                             name="infrastructure"
+                             value="pool"
+                             checked
+                      >
+                      <span class="filters__checkbox"></span>
+                      Бассейн
+                    </label>
+                  </li>
 
-                    <li class="filters__item">
-                      <label class="filters__wrapper">
-                        <input class="filters__input visually-hidden"
-                               type="checkbox"
-                               name="infrastructure"
-                               value="parking"
-                               checked
-                        >
-                        <span class="filters__checkbox"></span>
-                        Парковка
-                      </label>
-                    </li>
+                  <li class="filters__item">
+                    <label class="filters__wrapper">
+                      <input class="filters__input visually-hidden"
+                             type="checkbox"
+                             name="infrastructure"
+                             value="parking"
+                             checked
+                      >
+                      <span class="filters__checkbox"></span>
+                      Парковка
+                    </label>
+                  </li>
 
-                    <li class="filters__item">
-                      <label class="filters__wrapper">
-                        <input class="filters__input visually-hidden"
-                               type="checkbox"
-                               name="infrastructure"
-                               value="wi-fi"
-                        >
-                        <span class="filters__checkbox"></span>
-                        Wi-Fi
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
+                  <li class="filters__item">
+                    <label class="filters__wrapper">
+                      <input class="filters__input visually-hidden"
+                             type="checkbox"
+                             name="infrastructure"
+                             value="wi-fi"
+                      >
+                      <span class="filters__checkbox"></span>
+                      Wi-Fi
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
 
-                <fieldset class="filters__fieldset">
-                  <legend class="filters__legend text text--mid">Тип Жилья:</legend>
+              <fieldset class="filters__fieldset">
+                <legend class="filters__legend text text--mid">Тип Жилья:</legend>
 
-                  <ul class="filters__list list">
-                    <li class="filters__item">
-                      <label class="filters__wrapper">
-                        <input class="filters__input visually-hidden"
-                               type="radio"
-                               name="room-type"
-                               value="hotel"
-                               checked
-                        >
-                        <span class="filters__checkbox"></span>
-                        Гостиница
-                      </label>
-                    </li>
+                <ul class="list">
+                  <li class="filters__item">
+                    <label class="filters__wrapper">
+                      <input class="filters__input visually-hidden"
+                             type="radio"
+                             name="room-type"
+                             value="hotel"
+                             checked
+                      >
+                      <span class="filters__checkbox"></span>
+                      Гостиница
+                    </label>
+                  </li>
 
-                    <li class="filters__item">
-                      <label class="filters__wrapper">
-                        <input class="filters__input visually-hidden"
-                               type="radio"
-                               name="room-type"
-                               value="motel"
-                        >
-                        <span class="filters__checkbox"></span>
-                        Мотель
-                      </label>
-                    </li>
+                  <li class="filters__item">
+                    <label class="filters__wrapper">
+                      <input class="filters__input visually-hidden"
+                             type="radio"
+                             name="room-type"
+                             value="motel"
+                      >
+                      <span class="filters__checkbox"></span>
+                      Мотель
+                    </label>
+                  </li>
 
-                    <li class="filters__item">
-                      <label class="filters__wrapper">
-                        <input class="filters__input visually-hidden"
-                               type="radio"
-                               name="room-type"
-                               value="apartments"
-                        >
-                        <span class="filters__checkbox"></span>
-                        Апартаменты
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
-              </div>
+                  <li class="filters__item">
+                    <label class="filters__wrapper">
+                      <input class="filters__input visually-hidden"
+                             type="radio"
+                             name="room-type"
+                             value="apartments"
+                      >
+                      <span class="filters__checkbox"></span>
+                      Апартаменты
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
 
-              <div class="filters__side">
-                <fieldset class="filters__fieldset">
-                  <legend class="filters__legend text text--mid">Стоимость, ₽:</legend>
+            <div class="filters__side">
+              <fieldset class="filters__fieldset">
+                <legend class="filters__legend text text--mid">Стоимость, ₽:</legend>
 
-                  <div class="filters__range range">
-                    <div class="range__inputs">
-                      <label class="range__label">
-                        <input class="range__input"
-                               type="number"
-                               name="min-price"
-                               min="0"
-                               max="8999"
-                               value="0"
-                        >
-                        От
-                      </label>
+                <div class="range">
+                  <div class="range__inputs">
+                    <label class="range__label">
+                      <input class="range__input"
+                             type="number"
+                             name="min-price"
+                             min="0"
+                             max="8999"
+                             value="0"
+                      >
+                      От
+                    </label>
 
-                      <label class="range__label">
-                        <input class="range__input"
-                               type="number"
-                               name="max-price"
-                               min="1"
-                               max="9000"
-                               value="9000"
-                        >
-                        До
-                      </label>
-                    </div>
-
-                    <div class="range__slider">
-                      <button class="range__slider-button button" type="button">
-                        <span class="visually-hidden">Минимальная цена отеля</span>
-                      </button>
-
-                      <span class="range__slider-progress"></span>
-
-                      <button class="range__slider-button button" type="button">
-                        <span class="visually-hidden">Максимальная цена отеля</span>
-                      </button>
-                    </div>
+                    <label class="range__label">
+                      <input class="range__input"
+                             type="number"
+                             name="max-price"
+                             min="1"
+                             max="9000"
+                             value="9000"
+                      >
+                      До
+                    </label>
                   </div>
-                </fieldset>
 
-                <div class="filters__controls">
-                  <button class="filters__controls-button button button--secondary" type="submit">Применить</button>
-                  <button class="filters__controls-button button button--transparent" type="reset">Сбросить</button>
+                  <div class="range__slider">
+                    <button class="range__slider-button button" type="button">
+                      <span class="visually-hidden">Минимальная цена отеля</span>
+                    </button>
+
+                    <span class="range__slider-progress"></span>
+
+                    <button class="range__slider-button button" type="button">
+                      <span class="visually-hidden">Максимальная цена отеля</span>
+                    </button>
+                  </div>
                 </div>
+              </fieldset>
+
+              <div class="filters__controls">
+                <button class="filters__controls-button button button--secondary" type="submit">Применить</button>
+                <button class="filters__controls-button button button--transparent" type="reset">Сбросить</button>
               </div>
-            </form>
-          </section>
-        </div>
+            </div>
+          </form>
+        </section>
       </div>
 
       <section class="main-inner__hotels hotels">
@@ -261,10 +259,9 @@
           </header>
 
           <ul class="hotels__list list">
-            <li class="hotels__item">
-              <article class="hotels__card card">
-                <img class="card__image"
-                     src="images/hotels/amara-resort-and-spa.jpg"
+            <li>
+              <article class="card">
+                <img src="images/hotels/amara-resort-and-spa.jpg"
                      width="300"
                      height="212"
                      alt="Звёздное небо, окруженное горами."
@@ -295,9 +292,9 @@
               </article>
             </li>
 
-            <li class="hotels__item">
-              <article class="hotels__card card">
-                <img class="card__image"
+            <li>
+              <article class="card">
+                <img
                      src="images/hotels/villas-at-poco-diablo.jpg"
                      width="300"
                      height="212"
@@ -329,9 +326,9 @@
               </article>
             </li>
 
-            <li class="hotels__item">
-              <article class="hotels__card card">
-                <img class="card__image"
+            <li>
+              <article class="card">
+                <img
                      src="images/hotels/desert-quail-inn.jpg"
                      width="300"
                      height="212"
@@ -363,9 +360,9 @@
               </article>
             </li>
 
-            <li class="hotels__item">
-              <article class="hotels__card card">
-                <img class="card__image"
+            <li>
+              <article class="card">
+                <img
                      src="images/hotels/green-tree-inn.jpg"
                      alt="Каньон под звёздным небом на закате."
                 >
@@ -469,7 +466,7 @@
     <footer class="footer">
       <div class="footer__wrapper container">
         <ul class="footer__social social list">
-          <li class="social__item">
+          <li>
             <a class="social__link social__link--vk"
                href="https://vk.com/htmlacademy"
                target="_blank"
@@ -482,7 +479,7 @@
             </a>
           </li>
 
-          <li class="social__item">
+          <li>
             <a class="social__link social__link--tg"
                href="https://t.me/htmlacademy"
                target="_blank"
@@ -495,7 +492,7 @@
             </a>
           </li>
 
-          <li class="social__item">
+          <li>
             <a class="social__link social__link--yt"
                href="https://www.youtube.com/user/htmlacademyru"
                target="_blank"

@@ -11,7 +11,7 @@
 }
 
 .main-inner__header {
-  padding: 35px 50px 70px;
+  padding: 35px 70px 70px;
   margin-bottom: 50px;
 
   background-color: var(--bg-basic-dark);
@@ -179,7 +179,7 @@
 
 /* Hero */
 
-.hero {
+.main__hero {
   position: relative;
 
   display: flex;
@@ -248,12 +248,10 @@
 }
 
 .advantages__item--wide {
-  flex-grow: 1;
-
   color: var(--text-secondary);
 }
 
-.advantages__item--wide .advantages__item-figure {
+.advantages__item-figure {
   margin: 0;
 }
 
@@ -319,10 +317,9 @@
 }
 
 .infrastructure__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 30px;
+  display: grid;
+  grid-row-gap: 30px;
+  justify-items: center;
   min-width: 400px;
   padding: 80px 85px;
 
@@ -618,9 +615,9 @@
   margin-bottom: 40px;
 }
 
-.hotels__view {
+.hotels__view,
+.hotels__view-item {
   display: flex;
-  align-items: center;
 }
 
 .hotels__view-item:not(:last-of-type) {

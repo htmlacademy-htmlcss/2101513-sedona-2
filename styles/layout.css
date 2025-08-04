@@ -30,6 +30,7 @@
   margin-bottom: 40px;
 }
 
+
 /* Header */
 
 .header {
@@ -177,6 +178,7 @@
   background-repeat: no-repeat;
 }
 
+
 /* Hero */
 
 .main__hero {
@@ -198,6 +200,7 @@
     center center;
   background-repeat: no-repeat;
 }
+
 
 /* Intro */
 
@@ -225,6 +228,7 @@
 .intro__text {
   color: var(--text-accent);
 }
+
 
 /* Advantages */
 
@@ -716,7 +720,7 @@
 }
 
 
-  /* Card */
+/* Card */
 .card {
   display: grid;
   grid-row-gap: 16px;
@@ -798,7 +802,8 @@
   width: calc(var(--icon-star-size) * 5);
 }
 
-  /* Pagination */
+
+/* Pagination */
 
 .pagination__list {
   display: flex;
@@ -842,6 +847,7 @@
 
   cursor: pointer;
 }
+
 
 /* Footer */
 

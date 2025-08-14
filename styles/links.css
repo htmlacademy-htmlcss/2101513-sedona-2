@@ -59,6 +59,28 @@
   outline-color: inherit;
 }
 
+@supports not selector(:focus-visible) {
+  .link--primary:focus {
+    color: var(--primary-color-2);
+
+    outline-color: var(--primary-color-2);
+  }
+
+  .link--secondary:focus {
+    color: var(--secondary-color-3);
+
+    outline-color: var(--secondary-color-3);
+  }
+
+  .link--basic-light:focus {
+    color: var(--basic-color-light);
+  }
+
+  .link--as-text:focus {
+    outline-color: inherit;
+  }
+}
+
 .link--primary:active {
    color: rgba(104, 162, 202, 0.3);
 }

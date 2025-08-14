@@ -110,6 +110,31 @@
   outline-offset: unset;
 }
 
+@supports not selector(:focus-visible) {
+  .button--primary:focus {
+    background-color: var(--primary-color-2);
+
+    outline-color: var(--primary-color-2);
+  }
+
+  .button--secondary:focus {
+    background-color: var(--secondary-color-3);
+
+    outline-color: var(--secondary-color-3);
+  }
+
+  .button--accent:focus {
+    background-color: var(--accent-color-2);
+
+    outline-color: var(--accent-color-2);
+  }
+
+  .button--transparent:focus {
+    outline-color: var(--primary-color-2);
+    outline-offset: unset;
+  }
+}
+
 .button--primary:active {
   background-color: var(--primary-color);
 }

@@ -453,6 +453,12 @@
   outline: 3px solid var(--primary-color-3);
 }
 
+@supports not selector(:focus-visible) {
+  .subscribe__input:focus {
+    outline: 3px solid var(--primary-color-3);
+  }
+}
+
 .subscribe__button {
   min-width: 232px;
 
@@ -520,6 +526,12 @@
 
 .filters__input:focus-visible + .filters__checkbox {
   outline: 3px solid var(--primary-color-3);
+}
+
+@supports not selector(:focus-visible) {
+  .filters__input:focus + .filters__checkbox {
+    outline: 3px solid var(--primary-color-3);
+  }
 }
 
 .filters__wrapper:active {
@@ -630,7 +642,16 @@
 
 .range__input:focus-visible {
   background-color: var(--additional-color-3);
+
   outline: 3px solid var(--primary-color-3);
+}
+
+@supports not selector(:focus-visible) {
+  .range__input:focus {
+    background-color: var(--additional-color-3);
+
+    outline: 3px solid var(--primary-color-3);
+  }
 }
 
 .range__label {
@@ -684,6 +705,14 @@
   outline: 3px solid var(--primary-color-3);
   outline-offset: unset;
   box-shadow: 0 4px 10px 0 var(--basic-color-dark-0-25);
+}
+
+@supports not selector(:focus-visible) {
+  .range__slider-button:focus {
+    outline: 3px solid var(--primary-color-3);
+    outline-offset: unset;
+    box-shadow: 0 4px 10px 0 var(--basic-color-dark-0-25);
+  }
 }
 
 .range__slider-button:active {
@@ -740,6 +769,13 @@
 .hotels__view-link:focus-visible {
   outline: none;
   border-color: var(--primary-color-2);
+}
+
+@supports not selector(:focus-visible) {
+  .hotels__view-link:focus {
+    outline: none;
+    border-color: var(--primary-color-2);
+  }
 }
 
 .hotels__view-link:active {
@@ -826,6 +862,13 @@
 .sorting__select:focus-visible {
   outline: none;
   border-color: var(--primary-color-2);
+}
+
+@supports not selector(:focus-visible) {
+  .sorting__select:focus {
+    outline: none;
+    border-color: var(--primary-color-2);
+  }
 }
 
 .sorting__select:disabled {
@@ -961,6 +1004,13 @@
 .pagination__link:focus-visible {
   outline: 1px solid var(--primary-color);
   outline-offset: unset;
+}
+
+@supports not selector(:focus-visible) {
+  .pagination__link:focus {
+    outline: 1px solid var(--primary-color);
+    outline-offset: unset;
+  }
 }
 
 .pagination__button {

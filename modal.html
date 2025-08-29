@@ -3,9 +3,15 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet"
           href="styles/styles.css">
+    <link rel="icon"
+          type="image/png"
+          href="images/favicons/favicon.png"
+          sizes="32x32">
   </head>
 
   <body>
@@ -190,7 +196,7 @@
 
         <header class="infrastructure__intro intro container">
           <p class="intro__heading heading heading--second">
-            Приезжайте в Седону отдохнуть<br> в комфорте и уюте!
+            Приезжайте в Седону отдохнуть<br>в комфорте и уюте!
           </p>
           <p class="intro__text">
             Опытный персонал и качественное обслуживание!
@@ -411,10 +417,11 @@
                    for="check-in">
               <b>Дата заезда:</b>
             </label>
-            <input class="modal__input input input--has-bg"
+            <input class="modal__input input input--bold input--has-bg"
                    id="check-in"
                    type="text"
                    name="check-in"
+                   placeholder="27 апреля 2020"
                    value="27 апреля 2020"
                    required>
             <span class="modal__hint modal__hint--error">Мы не можем отправить вас в
@@ -426,24 +433,24 @@
                    for="check-out">
               <b>Дата выезда:</b>
             </label>
-            <input class="modal__input input input--has-bg"
+            <input class="modal__input input input--bold input--has-bg"
                    id="check-out"
                    type="text"
                    name="check-out"
-                   value="1 сентября 2023"
-                   required>
+                   placeholder="1 сентября 2023"
+                   value="1 сентября 2023">
             <span class="modal__hint">На эти даты есть свободные номера. Пока есть.</span>
           </p>
 
           <div class="modal__control modal__control--number">
-            <label for="adult-amount"
-                   class="modal__label">
+            <label class="modal__label"
+                   for="adult-amount">
               <b>Взрослые:</b>
             </label>
             <div class="modal__input-wrapper">
-              <button class="modal__button modal__button--increase"
+              <button class="modal__button modal__button--decrease"
                       type="button">
-                <span class="visually-hidden">Увеличить чсило взрослых гостей</span>
+                <span class="visually-hidden">Уменьшить чиcло взрослых гостей</span>
                 <svg width="14"
                      height="2"
                      viewBox="0 0 14 2"
@@ -454,15 +461,16 @@
                   <path d="M0 0L0 2L14 2V0L0 0Z" />
                 </svg>
               </button>
-              <input class="modal__input-number input input--number input--has-bg"
+              <input class="modal__input-number input input--number input--bold input--has-bg"
                      id="adult-amount"
                      name="adult-amount"
                      type="number"
                      min="1"
+                     placeholder="2"
                      value="2">
-              <button class="modal__button modal__button--decrease"
+              <button class="modal__button modal__button--increase"
                       type="button">
-                <span class="visually-hidden">Уменьшить чиcло взрослых гостей</span>
+                <span class="visually-hidden">Увеличить чиcло взрослых гостей</span>
                 <svg width="14"
                      height="14"
                      viewBox="0 0 14 14"
@@ -477,8 +485,8 @@
           </div>
 
           <div class="modal__control modal__control--number">
-            <label for="children-amount"
-                   class="modal__label modal__label--has-tooltip">
+            <label class="modal__label modal__label--has-tooltip"
+                   for="children-amount">
               <b>Дети:</b>
               <button class="modal__tooltip tooltip"
                       type="button"
@@ -486,7 +494,8 @@
                 <span class="tooltip__content"
                       role="tooltip"
                       id="tooltip">
-                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
+                  Укажите количество детей, которые будут с вами, возраст которых от 6 до
+                  18
                   лет.
                   Дети до 6 лет
                   размещаются бесплатно.
@@ -494,11 +503,10 @@
               </button>
             </label>
             <div class="modal__input-wrapper">
-              <button class="modal__button modal__button--increase"
+              <button class="modal__button modal__button--decrease"
                       type="button">
-                <span class="visually-hidden">Увеличить чсило детей</span>
-                <svg class="modal__button-icon"
-                     width="14"
+                <span class="visually-hidden">Уменьшить чиcло взрослых гостей</span>
+                <svg width="14"
                      height="2"
                      viewBox="0 0 14 2"
                      fill="currentColor"
@@ -508,15 +516,16 @@
                   <path d="M0 0L0 2L14 2V0L0 0Z" />
                 </svg>
               </button>
-              <input class="modal__input-number input input--number input--has-bg"
+              <input class="modal__input-number input input--number input--bold input--has-bg"
                      id="children-amount"
                      name="children-amount"
                      type="number"
                      min="1"
+                     placeholder="2"
                      value="2">
-              <button class="modal__button modal__button--decrease"
+              <button class="modal__button modal__button--increase"
                       type="button">
-                <span class="visually-hidden">Уменьшить чиcло детей</span>
+                <span class="visually-hidden">Увеличить чиcло взрослых гостей</span>
                 <svg width="14"
                      height="14"
                      viewBox="0 0 14 14"

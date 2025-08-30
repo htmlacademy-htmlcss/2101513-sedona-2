@@ -1651,6 +1651,7 @@ img {
   grid-column: span 1;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   row-gap: 20px;
 }
 
@@ -1658,18 +1659,13 @@ img {
   padding-left: 6px;
 }
 
-.modal__control--number .modal__label {
-  margin-right: auto;
-}
-
 .modal__label {
   font-size: 20px;
+  font-weight: 700;
   line-height: 1.2;
   text-transform: capitalize;
-}
 
-.modal__label--has-tooltip {
-  position: relative;
+  cursor: pointer;
 }
 
 .modal__input {
@@ -1774,6 +1770,10 @@ img {
 }
 
 .modal__tooltip {
+  position: relative;
+}
+
+.modal__tooltip-button {
   top: 50%;
   right: -37px;
   transform: translateY(-50%);

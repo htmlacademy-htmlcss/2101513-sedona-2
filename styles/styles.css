@@ -187,14 +187,14 @@ img {
 .input--number::-webkit-inner-spin-button {
   appearance: none;
   --webkit-appearance: none;
-  --moz-appearance: none;
+  --moz-appearance: textfield;
 }
 
 @media (hover: hover) {
   .input--number:hover {
     appearance: none;
     --webkit-appearance: none;
-    --moz-appearance: none;
+    --moz-appearance: textfield;
   }
 }
 
@@ -202,7 +202,7 @@ img {
 .input--number:focus {
   appearance: none;
   --webkit-appearance: none;
-  --moz-appearance: none;
+  --moz-appearance: textfield;
 }
 
 .input--bold {
@@ -1327,8 +1327,6 @@ img {
   cursor: pointer;
   transition: border-color var(--primary-transition-duration) var(--primary-transition-timing-function);
   appearance: none;
-  --webkit-appearance: none;
-  --moz-appearance: none;
 }
 
 @media (hover: hover) {

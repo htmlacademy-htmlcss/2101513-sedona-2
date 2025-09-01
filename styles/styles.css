@@ -495,13 +495,13 @@ img {
 }
 
 .main-inner__hotels {
-  padding-top: 52px;
+  padding-top: 50px;
   margin-bottom: 60px;
 }
 
 .main-inner__header {
   padding-top: 35px;
-  padding-bottom: 69px;
+  padding-bottom: 70px;
 
   background-color: var(--basic-color-dark);
   background-image: url("../images/backgrounds/filters-bg.jpg");
@@ -921,6 +921,10 @@ img {
   padding-bottom: 104px;
 }
 
+.subscribe--smaller-gap {
+  row-gap: 54px;
+}
+
 .subscribe__form {
   justify-self: center;
   display: flex;
@@ -957,7 +961,7 @@ img {
 
 .filters__side {
   display: flex;
-  column-gap: 70px;
+  column-gap: 71px;
 }
 
 .filters__fieldset {
@@ -1288,12 +1292,12 @@ img {
   display: grid;
   grid-template-columns: repeat(3, minmax(340px, auto));
   grid-auto-rows: minmax(438px, auto);
-  gap: 19px 20px;
+  gap: 17px 20px;
   margin-bottom: 39px;
 }
 
 .hotels__pagination {
-  padding-top: 41px;
+  padding-top: 40px;
 
   font-size: 20px;
   line-height: 1.8;
@@ -1368,7 +1372,7 @@ img {
 .card {
   display: grid;
   row-gap: 16px;
-  padding: 20px 19px;
+  padding: 21px 19px;
   min-height: 100%;
 
   border: 1px solid var(--additional-color-3);
@@ -1639,7 +1643,7 @@ img {
 .modal__form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 23px 80px;
+  gap: 23px 83px;
   margin-bottom: 48px;
 }
 
@@ -1665,7 +1669,7 @@ img {
 }
 
 .modal__control--number:nth-of-type(2n) {
-  padding-left: 6px;
+  padding-left: 5px;
 }
 
 .modal__label {
@@ -1761,11 +1765,11 @@ img {
 }
 
 .modal__button--decrease {
-  left: 8px;
+  left: 10px;
 }
 
 .modal__button--increase {
-  right: 11px;
+  right: 10px;
 }
 
 .modal__submit {

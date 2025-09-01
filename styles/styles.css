@@ -1340,8 +1340,6 @@ img {
   color: var(--basic-color-dark-0-30);
 
   border-color: var(--basic-color-dark-0-30);
-
-  pointer-events: none;
 }
 
 .sorting__select:disabled + .sorting__arrow {
@@ -1353,6 +1351,8 @@ img {
   top: 50%;
   right: 20px;
   transform: translateY(-50%);
+
+  pointer-events: none;
 }
 
 /* Card */

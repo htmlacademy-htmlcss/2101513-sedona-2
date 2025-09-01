@@ -19,7 +19,8 @@
 </html>
 
 <body>
-  <header class="header">
+  <header class="header"
+          data-test="header">
     <div class="header__wrapper container">
       <a class="header__logo link link--primary"
          href="index.html"
@@ -97,8 +98,10 @@
     </div>
   </header>
 
-  <main class="main">
-    <section class="main__hero container">
+  <main class="main"
+        data-test="main">
+    <section class="main__hero container"
+             data-test="hero">
       <h1 class="visually-hidden">Седона - небольшой городок в Аризоне</h1>
 
       <img src="images/content/welcome.svg"
@@ -107,7 +110,8 @@
            alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
     </section>
 
-    <section class="advantages">
+    <section class="advantages"
+             data-test="advantages">
       <h2 class="visually-hidden">Преимущества выборы Седоны</h2>
 
       <header class="advantages__intro intro container">
@@ -193,7 +197,8 @@
       </ul>
     </section>
 
-    <section class="infrastructure">
+    <section class="infrastructure"
+             data-test="service">
       <h2 class="visually-hidden">Инфраструктура Седоны</h2>
 
       <header class="infrastructure__intro intro container">
@@ -235,7 +240,8 @@
       </ul>
     </section>
 
-    <section class="offer container">
+    <section class="offer container"
+             data-test="search">
       <h2 class="visually-hidden">Предложения гостиниц в Седоне</h2>
 
       <header class="intro">
@@ -254,7 +260,8 @@
       </button>
     </section>
 
-    <section class="main__subscribe subscribe container">
+    <section class="main__subscribe subscribe container"
+             data-test="subscribe">
 
       <header class="intro intro--reverse-color">
         <h2 class="intro__heading heading heading--second">
@@ -283,7 +290,8 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer"
+          data-test="footer">
     <div class="footer__wrapper container">
       <ul class="footer__social social list">
         <li>

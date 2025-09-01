@@ -15,7 +15,8 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header"
+            data-test="header">
       <div class="header__wrapper container">
         <a class="header__logo link link--primary"
            href="index.html">
@@ -92,7 +93,8 @@
       </div>
     </header>
 
-    <main class="main main-inner">
+    <main class="main main-inner"
+          data-test="main">
       <div class="main-inner__header container">
         <h1 class="main-inner__title heading heading--first">Гостиницы Седоны</h1>
 
@@ -130,7 +132,8 @@
 
           <form class="filters__form"
                 action="https://echo.htmlacademy.ru/"
-                method="get">
+                method="get"
+                data-test="filter">
             <div class="filters__side">
               <fieldset class="filters__fieldset">
                 <legend class="filters__legend">Инфраструктура:</legend>
@@ -274,7 +277,8 @@
         </section>
       </div>
 
-      <section class="main-inner__hotels hotels">
+      <section class="main-inner__hotels hotels"
+               data-test="catalog">
         <h2 class="visually-hidden">Найденные отели по выбранным фильтрам</h2>
 
         <div class="container">
@@ -539,7 +543,8 @@
         </div>
       </section>
 
-      <section class="subscribe subscribe--without-image container">
+      <section class="subscribe subscribe--without-image container"
+               data-test="subscribe">
         <header class="intro">
           <h2 class="intro__heading heading heading--second">
             Подпишитесь на рассылку
@@ -567,7 +572,8 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer"
+            data-test="footer">
       <div class="footer__wrapper container">
         <ul class="footer__social social list">
           <li>

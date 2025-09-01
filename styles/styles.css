@@ -14,6 +14,7 @@
   --additional-color: #333333;
   --additional-color-2: #f2f2f2;
   --additional-color-3: #e6e6e6;
+  --additional-color-4: var(--additional-color-4);
   --error-color: #ff5757;
 
   /* RGBA Colors */
@@ -265,7 +266,7 @@ img {
 }
 
 .button:disabled {
-  background-color: #e5e5e5;
+  background-color: var(--additional-color-4);
 
   pointer-events: none;
 }
@@ -1242,7 +1243,7 @@ img {
 
   background-repeat: no-repeat;
   background-position: center;
-  border: 2px solid #e5e5e5;
+  border: 2px solid var(--additional-color-4);
   border-radius: 4px;
 
   transition: border-color var(--primary-transition-duration) var(--primary-transition-timing-function);
@@ -1321,7 +1322,7 @@ img {
   color: var(--additional-color);
   line-height: inherit;
 
-  border: 2px solid #e5e5e5;
+  border: 2px solid var(--additional-color-4);
   border-radius: 4px;
 
   cursor: pointer;

@@ -3,8 +3,6 @@
 
   <head>
     <meta charset="utf-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона - Каталог</title>
     <link rel="stylesheet"
           href="styles/styles.css">
@@ -288,7 +286,7 @@
               <span class="hotels__amount">38</span></b>
 
             <div class="sorting">
-              <select class="sorting__select input"
+              <select class="sorting__select"
                       name="sorting"
                       aria-label="Сортировка найденных отелей">
                 <option value="cheap"
@@ -311,7 +309,9 @@
 
             <ul class="hotels__view list">
               <li class="hotels__view-item">
-                <a class="hotels__view-link hotels__view-link--tile-view hotels__view-link--active">
+                <a class="hotels__view-link hotels__view-link--tile-view hotels__view-link--active"
+                   href="catalog.html?view=tile"
+                   tabindex="-1">
                   <span class="visually-hidden">Показать список гостиниц плиткой</span>
                 </a>
               </li>
@@ -559,7 +559,7 @@
               method="post">
           <label class="visually-hidden"
                  for="subscription-email">Введите ваш e-mail адрес</label>
-          <input class="subscribe__input input input--has-bg"
+          <input class="subscribe__input input input--additional-bg"
                  type="email"
                  id="subscription-email"
                  name="subscription-email"

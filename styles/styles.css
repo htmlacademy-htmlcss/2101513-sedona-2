@@ -82,13 +82,14 @@ html {
 
 html,
 body {
-  min-height: 100%;
+  min-width: var(--content-width);
 }
 
 body {
   display: flex;
   flex-direction: column;
-  width: var(--content-width);
+  max-width: var(--content-width);
+  min-height: 100vh;
   margin: 0 auto;
 
   background-color: var(--basic-color-light);

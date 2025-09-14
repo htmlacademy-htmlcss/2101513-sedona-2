@@ -1348,6 +1348,7 @@ img {
   font-size: inherit;
   line-height: inherit;
 
+  background-color: transparent;
   border: 2px solid var(--additional-color-3);
   border-radius: 4px;
 
@@ -1378,6 +1379,8 @@ img {
   color: var(--basic-color-dark-0-30);
 
   border-color: var(--basic-color-dark-0-30);
+
+  pointer-events: none;
 }
 
 .sorting__select:disabled + .sorting__arrow {

@@ -48,9 +48,8 @@
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src:
-    local("PT Sans"),
-    url("../fonts/ptsans-400.woff2") format("woff2");
+  src: local("PT Sans"),
+  url("../fonts/ptsans-400.woff2") format("woff2");
 }
 
 @font-face {
@@ -58,9 +57,8 @@
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src:
-    local("PT Sans"),
-    url("../fonts/ptsans-700.woff2") format("woff2");
+  src: local("PT Sans"),
+  url("../fonts/ptsans-700.woff2") format("woff2");
 }
 
 html {
@@ -298,9 +296,8 @@ img {
 }
 
 .button--transparent {
-  transition:
-    opacity var(--primary-transition-duration) var(--primary-transition-timing-function),
-    color var(--primary-transition-duration) var(--primary-transition-timing-function);
+  transition: opacity var(--primary-transition-duration) var(--primary-transition-timing-function),
+  color var(--primary-transition-duration) var(--primary-transition-timing-function);
 }
 
 @media (hover: hover) {
@@ -541,7 +538,6 @@ img {
   margin-bottom: 40px;
 }
 
-
 /* Header */
 
 .header {
@@ -576,7 +572,6 @@ img {
 .header__link {
   min-width: 161px;
 }
-
 
 /* Navigation */
 
@@ -656,7 +651,6 @@ img {
   overflow: hidden;
 }
 
-
 /* Breadcrumbs */
 
 .breadcrumbs {
@@ -694,7 +688,6 @@ img {
   pointer-events: none;
 }
 
-
 /* Hero */
 
 .main__hero {
@@ -706,18 +699,14 @@ img {
   padding-bottom: 82px;
 
   background-color: var(--fallback-bg-color);
-  background-image:
-    url("../images/backgrounds/hero-decoration-bg.svg"),
-    url("../images/backgrounds/hero-bg.jpg");
-  background-size:
-    1200px 57px,
-    cover;
-  background-position:
-    center bottom,
-    center center;
+  background-image: url("../images/backgrounds/hero-decoration-bg.svg"),
+  url("../images/backgrounds/hero-bg.jpg");
+  background-size: 1200px 57px,
+  cover;
+  background-position: center bottom,
+  center center;
   background-repeat: no-repeat;
 }
-
 
 /* Intro */
 
@@ -754,7 +743,6 @@ img {
   line-height: 1.18;
   color: var(--additional-color);
 }
-
 
 /* Advantages */
 
@@ -845,7 +833,6 @@ img {
   object-fit: cover;
 }
 
-
 /* Infrastructure */
 
 .infrastructure__intro {
@@ -917,7 +904,6 @@ img {
   color: var(--additional-color);
 }
 
-
 /* Offer */
 
 .offer {
@@ -932,7 +918,6 @@ img {
   width: 100%;
   max-width: 376px;
 }
-
 
 /* Subscribe */
 
@@ -967,7 +952,6 @@ img {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
-
 
 /* Filters */
 
@@ -1106,7 +1090,6 @@ img {
   min-width: 191px;
 }
 
-
 /* Range */
 
 .range__inputs {
@@ -1240,7 +1223,6 @@ img {
   background-color: var(--basic-color-light);
 }
 
-
 /* Hotels */
 
 .hotels__header {
@@ -1333,7 +1315,6 @@ img {
 
   border-top: 1px solid var(--additional-color-3);
 }
-
 
 /* Sorting */
 
@@ -1488,7 +1469,6 @@ img {
   width: calc(var(--icon-star-size) * 5);
 }
 
-
 /* Pagination */
 
 .pagination__list {
@@ -1551,7 +1531,6 @@ img {
   pointer-events: none;
 }
 
-
 /* Footer */
 
 .footer__wrapper {
@@ -1579,7 +1558,6 @@ img {
   color: inherit;
 }
 
-
 /* Social */
 
 .social__link {
@@ -1589,7 +1567,6 @@ img {
   width: 47px;
   height: 40px;
 }
-
 
 /* Modal */
 

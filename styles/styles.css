@@ -948,7 +948,7 @@ img {
 }
 
 .subscribe__button {
-  min-width: 232px;
+  width: 232px;
 
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;

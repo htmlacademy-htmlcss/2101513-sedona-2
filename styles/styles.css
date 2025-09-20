@@ -1549,6 +1549,12 @@ img {
   max-width: 141px;
 }
 
+.footer__contact {
+  display: grid;
+  row-gap: 16px;
+  max-width: 331px;
+}
+
 .footer__contact-link {
   font-size: 40px;
   line-height: 1;

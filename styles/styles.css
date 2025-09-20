@@ -570,7 +570,7 @@ img {
 }
 
 .header__link {
-  min-width: 161px;
+  width: 161px;
 }
 
 /* Navigation */

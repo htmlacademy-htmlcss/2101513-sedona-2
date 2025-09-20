@@ -126,6 +126,10 @@ img {
   padding-left: 70px;
 }
 
+.break-word {
+  word-break: break-word;
+}
+
 .heading {
   font-weight: 700;
 }
@@ -975,6 +979,14 @@ img {
   margin-left: 0;
   border: none;
   padding: 0;
+}
+
+.filters__fieldset--options {
+  max-width: 150px;
+}
+
+.filters__fieldset--range {
+  max-width: 288px;
 }
 
 .filters__legend {

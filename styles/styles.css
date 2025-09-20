@@ -582,6 +582,7 @@ img {
 
 .navigation__menu {
   gap: 32px;
+  max-width: 340px;
 
   font-size: 20px;
   line-height: 1.2;

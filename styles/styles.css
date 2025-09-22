@@ -126,6 +126,10 @@ img {
   padding-left: 70px;
 }
 
+.break-word {
+  word-break: break-word;
+}
+
 .heading {
   font-weight: 700;
 }
@@ -230,6 +234,7 @@ img {
   line-height: 1.25;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
 
   background-color: transparent;
   border: none;
@@ -513,7 +518,7 @@ img {
 }
 
 .main-inner__hotels {
-  padding-top: 50px;
+  padding-top: 51px;
   margin-bottom: 60px;
 }
 
@@ -570,7 +575,7 @@ img {
 }
 
 .header__link {
-  min-width: 161px;
+  width: 161px;
 }
 
 /* Navigation */
@@ -582,6 +587,7 @@ img {
 
 .navigation__menu {
   gap: 32px;
+  max-width: 420px;
 
   font-size: 20px;
   line-height: 1.2;
@@ -594,6 +600,10 @@ img {
 
   font-weight: 700;
   text-transform: capitalize;
+}
+
+.navigation__actions {
+  max-width: 130px;
 }
 
 .navigation__link--active {
@@ -947,7 +957,7 @@ img {
 }
 
 .subscribe__button {
-  min-width: 232px;
+  width: 232px;
 
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
@@ -974,6 +984,14 @@ img {
   margin-left: 0;
   border: none;
   padding: 0;
+}
+
+.filters__fieldset--options {
+  max-width: 150px;
+}
+
+.filters__fieldset--range {
+  max-width: 288px;
 }
 
 .filters__legend {
@@ -1084,10 +1102,7 @@ img {
   align-self: flex-end;
   display: grid;
   row-gap: 32px;
-}
-
-.filters__controls-button {
-  min-width: 191px;
+  width: 191px;
 }
 
 /* Range */
@@ -1234,6 +1249,7 @@ img {
 }
 
 .hotels__header-title {
+  max-width: 350px;
   margin-right: auto;
 }
 
@@ -1243,7 +1259,9 @@ img {
 }
 
 .hotels__view {
-  column-gap: 8px;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 160px;
 }
 
 .hotels__view-link {
@@ -1301,7 +1319,7 @@ img {
 
 .hotels__list {
   display: grid;
-  grid-template-columns: repeat(3, minmax(340px, auto));
+  grid-template-columns: repeat(3, minmax(auto, 340px));
   grid-auto-rows: minmax(438px, auto);
   gap: 19px 20px;
   margin-bottom: 40px;
@@ -1384,12 +1402,58 @@ img {
 /* Card */
 .card {
   display: grid;
-  row-gap: 16px;
+  grid-auto-columns: 140px;
+  grid-template-areas:
+    "card-image card-image"
+    "card-title card-title"
+    "card-type card-price"
+    "card-more card-favorite"
+    "card-stars card-rating";
+  align-items: center;
+  gap: 16px 20px;
   padding: 20px 19px;
   min-height: 100%;
 
   border: 1px solid var(--additional-color-3);
   border-radius: 4px;
+}
+
+.card__image {
+  grid-area: card-image;
+}
+
+.card__title {
+  grid-area: card-title;
+}
+
+.card__info-type {
+  grid-area: card-type;
+}
+
+.card__info-price {
+  grid-area: card-price;
+
+  text-align: right;
+}
+
+.card__controls-button--more {
+  grid-area: card-more;
+}
+
+.card__controls-button--favorite {
+  grid-area: card-favorite;
+}
+
+.card__stars {
+  grid-area: card-stars;
+}
+
+.card__rating {
+  grid-area: card-rating;
+}
+
+.card__link {
+  display: contents;
 }
 
 .card__title,
@@ -1398,10 +1462,13 @@ img {
   margin-bottom: 0;
 }
 
-.card__info {
-  display: flex;
-  justify-content: space-between;
+.card__info,
+.card__controls,
+.card__quality{
+  display: contents;
+}
 
+.card__info {
   color: var(--additional-color);
 }
 
@@ -1409,28 +1476,10 @@ img {
   margin-left: 0;
 }
 
-.card__info,
-.card__controls,
-.card__quality {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  column-gap: 20px;
-}
-
-.card__controls-button,
 .card__rating {
-  flex-grow: 1;
-  max-width: 140px;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-.card__rating {
-  padding-top: 8px;
-  padding-bottom: 8px;
   margin-top: 0;
   margin-bottom: 0;
+  padding: 8px 16px;
 
   color: var(--additional-color);
   font-size: 16px;
@@ -1477,12 +1526,13 @@ img {
 }
 
 .pagination__link {
-  min-width: 60px;
+  width: 60px;
   min-height: 60px;
   padding-top: 10px;
   padding-bottom: 10px;
 
   font-size: inherit;
+  text-align: center;
 
   border: 1px solid transparent;
   border-radius: 4px;
@@ -1547,6 +1597,12 @@ img {
   display: flex;
   flex-wrap: wrap;
   max-width: 141px;
+}
+
+.footer__contact {
+  display: grid;
+  row-gap: 16px;
+  max-width: 331px;
 }
 
 .footer__contact-link {

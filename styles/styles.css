@@ -518,7 +518,7 @@ img {
 }
 
 .main-inner__hotels {
-  padding-top: 50px;
+  padding-top: 51px;
   margin-bottom: 60px;
 }
 
@@ -967,7 +967,6 @@ img {
 
 .filters__form {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 40px;
@@ -1433,6 +1432,8 @@ img {
 
 .card__info-price {
   grid-area: card-price;
+
+  text-align: right;
 }
 
 .card__controls-button--more {

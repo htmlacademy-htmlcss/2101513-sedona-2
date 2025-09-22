@@ -963,6 +963,7 @@ img {
 
 .filters__form {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 40px;
@@ -1255,7 +1256,9 @@ img {
 }
 
 .hotels__view {
-  column-gap: 8px;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 160px;
 }
 
 .hotels__view-link {

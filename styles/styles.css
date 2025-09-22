@@ -1244,6 +1244,7 @@ img {
 }
 
 .hotels__header-title {
+  max-width: 350px;
   margin-right: auto;
 }
 
@@ -1311,7 +1312,7 @@ img {
 
 .hotels__list {
   display: grid;
-  grid-template-columns: repeat(3, minmax(340px, auto));
+  grid-template-columns: repeat(3, minmax(auto, 340px));
   grid-auto-rows: minmax(438px, auto);
   gap: 19px 20px;
   margin-bottom: 40px;
@@ -1394,12 +1395,56 @@ img {
 /* Card */
 .card {
   display: grid;
-  row-gap: 16px;
+  grid-auto-columns: 140px;
+  grid-template-areas:
+    "card-image card-image"
+    "card-title card-title"
+    "card-type card-price"
+    "card-more card-favorite"
+    "card-stars card-rating";
+  align-items: center;
+  gap: 16px 20px;
   padding: 20px 19px;
   min-height: 100%;
 
   border: 1px solid var(--additional-color-3);
   border-radius: 4px;
+}
+
+.card__image {
+  grid-area: card-image;
+}
+
+.card__title {
+  grid-area: card-title;
+}
+
+.card__info-type {
+  grid-area: card-type;
+}
+
+.card__info-price {
+  grid-area: card-price;
+}
+
+.card__controls-button--more {
+  grid-area: card-more;
+}
+
+.card__controls-button--favorite {
+  grid-area: card-favorite;
+}
+
+.card__stars {
+  grid-area: card-stars;
+}
+
+.card__rating {
+  grid-area: card-rating;
+}
+
+.card__link {
+  display: contents;
 }
 
 .card__title,
@@ -1408,10 +1453,13 @@ img {
   margin-bottom: 0;
 }
 
-.card__info {
-  display: flex;
-  justify-content: space-between;
+.card__info,
+.card__controls,
+.card__quality{
+  display: contents;
+}
 
+.card__info {
   color: var(--additional-color);
 }
 
@@ -1419,28 +1467,10 @@ img {
   margin-left: 0;
 }
 
-.card__info,
-.card__controls,
-.card__quality {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  column-gap: 20px;
-}
-
-.card__controls-button,
 .card__rating {
-  flex-grow: 1;
-  max-width: 140px;
-  padding-right: 10px;
-  padding-left: 10px;
-}
-
-.card__rating {
-  padding-top: 8px;
-  padding-bottom: 8px;
   margin-top: 0;
   margin-bottom: 0;
+  padding: 8px 16px;
 
   color: var(--additional-color);
   font-size: 16px;
